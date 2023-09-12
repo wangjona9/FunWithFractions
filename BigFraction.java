@@ -144,7 +144,7 @@ public class BigFraction {
     // return this.num.toString().concat("/").concat(this.denom.toString());
   //  return this.num + "/" + this.denom;
  // } // toString()
-// class Fraction
+// class BigFraction
 
 
   public BigFraction multiply(BigFraction multiple) throws Exception{

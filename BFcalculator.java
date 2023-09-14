@@ -1,6 +1,6 @@
 public class BFcalculator {
     private BigFraction lastComputedValue;
-    private BigFraction[] registers = new BigFraction[10]; // Instantiate a BigFraction array
+    private BigFraction[] registers = new BigFraction[30]; // Instantiate a BigFraction array
 
     public BigFraction evaluate(String exp) throws Exception {
         String[] tokens = exp.split("\\s+"); // Split the expression into tokens

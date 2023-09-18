@@ -1,3 +1,11 @@
+/**
+ * An implementation of a quick calculator
+ * to read in command line arguments
+ * of BigFractions and print them to the screen.
+ * 
+ * @author Jonathan Wang
+ * September 2023
+ */
 public class QuickCalculator {
     public static void main(String[] args) {
         BFcalculator calculator = new BFcalculator();

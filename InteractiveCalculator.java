@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 /**
  * An implementation of an interactive calculator
- * to read in a string of BigFractions.
+ * to read in user input and repeatedly prompt after
+ * printing the result.
  * 
  * @author Jonathan Wang
  * September 2023

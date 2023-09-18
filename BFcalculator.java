@@ -1,3 +1,12 @@
+/**
+ * An implementation of a BigFraction calculator
+ * to read in a string of BigFractions. Used for
+ * the InteractiveCalculator & QuickCalculator classes.
+ * 
+ * @author Jonathan Wang
+ * September 2023
+ */
+
 public class BFcalculator {
     private BigFraction lastComputedValue;
     private BigFraction[] registers = new BigFraction[30]; // Instantiate a BigFraction array

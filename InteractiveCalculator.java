@@ -1,5 +1,12 @@
 import java.util.Scanner;
 
+/**
+ * An implementation of an interactive calculator
+ * to read in a string of BigFractions.
+ * 
+ * @author Jonathan Wang
+ * September 2023
+ */
 public class InteractiveCalculator {
     public static void main(String[] args) {
         BFcalculator calculator = new BFcalculator();

@@ -8,7 +8,7 @@
  */
 public class QuickCalculator {
     public static void main(String[] args) {
-        BFcalculator calculator = new BFcalculator();
+        BFCalculator calculator = new BFCalculator();
 
         for (String arg : args) { // For-each loop for the args
             try { // Code that may throw exception

@@ -7,7 +7,7 @@
  * September 2023
  */
 
-public class BFcalculator {
+public class BFCalculator {
     private BigFraction lastComputedValue;
     private BigFraction[] registers = new BigFraction[30]; // Instantiate a BigFraction array
 

@@ -10,7 +10,7 @@ import java.util.Scanner;
  */
 public class InteractiveCalculator {
     public static void main(String[] args) {
-        BFcalculator calculator = new BFcalculator();
+        BFCalculator calculator = new BFCalculator();
         Scanner scanner = new Scanner(System.in); // Initialize scanner
 
         while (true) {

@@ -185,10 +185,10 @@ public class BigFraction {
 
     if (newDenominator.compareTo(BigInteger.ZERO) == 0) {
       System.err.println("Can't divide by 0."); // Division by 0 exception
-    } // divide(BigFraction)
+    } 
 
     return new BigFraction(newNumerator, newDenominator).simplify();
-  }
+  } // divide(BigFraction)
 
   public char intValue() {
     return 0;

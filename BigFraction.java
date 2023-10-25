@@ -121,11 +121,11 @@ public class BigFraction {
     BigInteger resultNumerator;
     BigInteger resultDenominator;
 
-    resultDenominator = this.denom.multiply(subtractMe.denom);
-    resultNumerator = (this.num.multiply(subtractMe.denom)).subtract(subtractMe.num.multiply(this.denom));
+    resultDenominator = this.denom.multiply(subtractMe.denom); // simplify numerator and denominator
+    resultNumerator = (this.num.multiply(subtractMe.denom)).subtract(subtractMe.num.multiply(this.denom)); 
 
     return new BigFraction(resultNumerator, resultDenominator).simplify();
-  }
+  } // subtract()
 
   /**
    * Get the denominator of this fraction.
@@ -142,9 +142,9 @@ public class BigFraction {
   } // numerator()
 
   public BigFraction simplify() {
-    BigInteger gcd = this.num.gcd(this.denom);
+    BigInteger gcd = this.num.gcd(this.denom); // Greatest Common Denominator
     return new BigFraction(this.num.divide(gcd), this.denom.divide(gcd));
-  }
+  } // simplify()
 
   /**
    * Convert this fraction to a string for ease of printing.
@@ -163,7 +163,7 @@ public class BigFraction {
     // Return the string representation of the numerator,
     // a slash, and the string representation of the denominator
     return this.num + "/" + this.denom;
-  }
+  } // toString()
 
   // Lump together the string represention of the numerator,
   // a slash, and the string representation of the denominator
@@ -173,26 +173,26 @@ public class BigFraction {
   // class Fraction
 
   public BigFraction multiply(BigFraction multiple) throws Exception {
-    BigInteger newNumerator = this.num.multiply(multiple.num);
-    BigInteger newDenominator = this.denom.multiply(multiple.denom);
+    BigInteger newNumerator = this.num.multiply(multiple.num); // multiply nums
+    BigInteger newDenominator = this.denom.multiply(multiple.denom); // multiply denoms
 
     return new BigFraction(newNumerator, newDenominator).simplify();
-  }
+  } // multiply(BigFraction)
 
   public BigFraction divide(BigFraction divisor) throws Exception {
-    BigInteger newNumerator = this.num.multiply(divisor.denom);
-    BigInteger newDenominator = this.denom.multiply(divisor.num);
+    BigInteger newNumerator = this.num.multiply(divisor.denom); // divide nums
+    BigInteger newDenominator = this.denom.multiply(divisor.num); // divide denoms
 
     if (newDenominator.compareTo(BigInteger.ZERO) == 0) {
-      System.err.println("Can't divide by 0.");
-    }
+      System.err.println("Can't divide by 0."); // Division by 0 exception
+    } // divide(BigFraction)
 
     return new BigFraction(newNumerator, newDenominator).simplify();
   }
 
   public char intValue() {
     return 0;
-  }
+  } // intValue()
 
   // +---------+--------------------------------------------------------
   // | Methods |
